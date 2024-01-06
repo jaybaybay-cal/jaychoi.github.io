@@ -1,0 +1,168 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Root Variables for Easy Theme Management */
+:root {
+    --primary-color: #121212; /* Dark gray as primary color */
+    --text-color: #333; /* Primary text color */
+    --background-color: #f4f4f4; /* Background color */
+    --link-color: #BB86FC; /* A pop of color for links, maybe a soft purple or any other */
+    --link-hover-color: #3700B3; /* A darker shade for hover states */
+}
+
+/* Reset some basic elements */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a basic font and background */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+/* Style the header */
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Navigation bar styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+/* Main content area */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 40px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+p i.fas.fa-check {
+    color: green; /* Or any specific shade of green you prefer */
+}
+
+/* Style for section headings */
+h1, h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+/* Style for paragraphs */
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Image styles */
+img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center Images */
+}
+
+/* Specific Image styles for smaller images on other pages */
+.small-img {
+    width: 100px; /* Smaller width for other pages */
+    /* Other styles if needed */
+}
+
+/* Style for all Font Awesome icons */
+i.fab {
+    font-size: 24px; /* Or any other size */
+    color: var(--text-color); /* Or any other color */
+    margin-right: 8px; /* Space between icons */
+    transition: color 0.3s;
+}
+
+i.fab:hover {
+    color: var(--link-hover-color); /* Darker shade on hover */
+}
+
+/* Specific social media icon colors */
+i.fab.fa-facebook-square { color: #3b5998; } /* Facebook Blue */
+i.fab.fa-linkedin { color: #0A66C2; } /* LinkedIn Blue */
+i.fab.fa-instagram-square { color: #e1306c; } /* Instagram Pink */
+/* Add more as needed */
+
+.back-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styles */
+footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    /*position: absolute;*/
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
